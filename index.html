@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Vinoth Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="Describe" content="This My Pofrtfolio Design">
+	<meta name="author" content="K.VINOTH">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- gogole icon and font link -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+
+	<div class="main">
+		<header class="v">
+			<h2 style="color: orange;"><span style="color: white;">V-Portfolio</span>.me</h2>
+
+			<!-- <nav class="navbar">
+			<a href="#">Home</a>
+			<a href="#">Contact</a>
+		</nav> -->
+		</header>
+
+		<img class="mypic mypic2 " src="./image/TDL.jpg" alt="my profile" height="310px">
+
+		<div class="content">
+			<h1 id="text" class="tc">&nbsp;I'm,<span id="nametext" class="namecolor">VINOTH .K</span></h1>
+			<h3 class="aboutp" style="margin: 10px;">UX/UI Designer & Font-end web devloper<h3><br>
+					<!-- <div class="location">
+						<h3 id="place" class="tc plc" style="margin: 10px;">Coimbatore
+						</h3>
+						<br>
+					</div> -->
+					<div class="rebtn">
+
+						<button class="subbtn" onclick="download()">
+							<span class="material-symbols-outlined">
+								downloading
+							</span>&nbsp;
+							Resume</button>
+					</div>
+					<br>
+
+					<div class="contact">
+						<div class="lin in"><i class="fa fa-linkedin" id="in" style="font-size:30px;color: black;"></i>
+						</div>
+						<div class="lin mail"><a href="mailto:kvvinoth.me@gmail.com"><i class="fa fa-envelope"
+									style="font-size:30px"></i></a></div>
+						<div class="lin insta"><a href="https://github.com/KV-Vinoth"><i class="fa fa-github" style="font-size:36px;color: black;"></i></a>
+						</div>
+					</div>
+		</div>
+
+		</h3>
+		</h3>
+	</div>
+	</div>
+
+	<br>
+	<div class="skills">
+		<div class="skillbox"></div>
+		<h1 class="skill-head">Skills</h1>
+		</div>
+		<br>
+		<div class="logo-con">
+			
+				<img class="skill-logo" src="./image/figma logo.png" width="10%" height="auto">
+				<img class="skill-logo" src="./image/github.png" width="10%" height="auto">
+				<img class="skill-logo" src="./image/msword.png" width="9%" height="auto">
+				<img class="skill-logo" src="./image/notion.png" width="10%" height="auto">
+		</div>
+	</div>
+	</div>
+		<br>
+
+	<div class="mainpro">
+		<div class="project">
+			<br>
+			<h2 class="protitle">Show Case My Project's</h2>
+			<br>
+			<!-- <div class="flt">
+				<h2 class="subtflt">Show Only &nbsp;:</h2>
+				<button class="findbtn clearbtn" onclick="filterSelection('clear')">Show All</button>
+				<button class="findbtn uxbtn" onclick="filterSelection('ux')">UX Project Only</button>
+				<button class="findbtn htmlbtn" onclick="filterSelection('html')">HTML Project Only</button>
+			</div> -->
+			<br>
+			<div class="con">
+				<div class="card ux">
+					<h3 class="cardtitle">Notify App Design</h3>
+					<h2 class="cardsub ux">UX/UI Design Project</h2>
+					<!-- <button class="cardbtb" onClick="window.location.href='./uxui.html';">Tap to View</button> -->
+					<button class="cardbtb">Process Going.....</button>
+				</div>
+		
+				<!-- <div class="card card2 html">
+					<h3 class="cardtitle">My Portfolio</h3>
+					<h2 class="cardsub html">HTML Project</h2>
+					<button class="cardbtb">Tap to View</button>
+				</div> -->
+			</div>
+			<br>
+		</div>
+	</div>
+
+	
+
+<script>
+	function download() {
+		window.open("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg")
+	}
+
+	function filterSelection(filter) {
+            const cards = document.getElementsByClassName('card');
+            for (let i = 0; i < cards.length; i++) {
+                const card = cards[i];
+                if (filter === 'clear') {
+                    card.style.display = '';
+                } else {
+                    if (card.classList.contains(filter)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            }
+        }
+
+		
+
+
+</script>
+</body>
+</html>
